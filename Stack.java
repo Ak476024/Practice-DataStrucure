@@ -1,12 +1,12 @@
 public class Stack {
-  QNode<String>front;
+  Node<String>front;
 
   public Stack(){
     this.front=null;
   }
 
   public void push(String key){
-    QNode<String> node = new QNode<String>(key);
+    Node<String> node = new Node<String>(key);
     if(front==null){
       this.front = node;
       return;
